@@ -8,15 +8,22 @@ import { Tutorial } from '../models/tutorial.model';
 export class TutorialService {
   private dbPath = '/tutorials';
 
-  tutorialsRef: AngularFireList<Tutorial>;
+  // tutorialsRef: AngularFireList<Tutorial>;
+  tutorialsRef: AngularFireList<any>;
+
 
   constructor(private db: AngularFireDatabase) {
     this.tutorialsRef = db.list(this.dbPath);
   }
 
-  getAll(): AngularFireList<Tutorial> {
+  // getAll(): AngularFireList<Tutorial> {
+  getAll(): AngularFireList<any> {
+
+    console.log('tutorialsRef::', this.tutorialsRef);
+    
     return this.tutorialsRef;
   }
+  
 
   create(tutorial: Tutorial): any {
     return this.tutorialsRef.push(tutorial);

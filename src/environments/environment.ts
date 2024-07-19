@@ -1,12 +1,31 @@
 export const environment = {
-  production: false,
-  firebase: {
-    apiKey: 'xxx',
-    authDomain: 'bezkoder-firebase.firebaseapp.com',
-    databaseURL: 'https://bezkoder-firebase.firebaseio.com',
-    projectId: 'bezkoder-firebase',
-    storageBucket: 'bezkoder-firebase.appspot.com',
-    messagingSenderId: 'xxx',
-    appId: 'xxx'
-  }
+  production: true,
+  agaze_generic_api_base_url: "https://agazeflexiblegen.appspot.com/",
+  agaze_generic_api_file_upload: "fileupload/service/v1/btpfile/upload/?app_id=",
+  agaze_generic_api_generate_file: "fileupload/service/v1/btpgeneratefile/?app_id=",
+  agaze_generic_api_generate_excel_file: "fileupload/service/v1/btpgenerateexcelfile/?app_id=",
+  agaze_generic_api_app_id: "83c6d963df80ea293e2a",
+  firebase_config: {
+    apiKey: "AIzaSyDGANNIarMF6JK3EoG2l0-D5lO4tqARwAA",
+    authDomain: "readymixproduction-2020.firebaseapp.com",
+    databaseURL: "https://readymixproduction-2020.firebaseio.com",
+    projectId: "readymixproduction-2020",
+    storageBucket: "readymixproduction-2020.appspot.com",
+    messagingSenderId: "547250235482" 
+  },
+  readymix_appid_part: '?app_id=83c6d963df80ea293e2a',
+  readymix_appid: '83c6d963df80ea293e2a',
+  readymix_user_base_url: 'https://readymixbackend-dev-101.appspot.com/',
+  readymix_user_app_id: '83c6d963df80ea293e2a',
+  readymix_app_id: '/?app_id=',
+  readymix_user_login: 'auth/service/v1/user/login/?app_id=',
+  readymix_user_register: 'auth/service/v1/register/?app_id=',
+  readymix_single_user: 'auth/service/v1/register/',
+  readymix_user_usertype: 'auth/service/v1/usertype/?app_id=',
+  readymix_user_forgot_password: 'password/service/v1/passwordresetsendmail/?app_id=',
+  readymix_user_reset_password: 'password/service/v1/passwordreset/?app_id=',
+  readymix_receipt: 'entity/service/v1/receiptentry/',
+  readymix_receipt_details: 'entity/service/v1/receiptentrydetails/',
+  readymix_receipt_cancel: 'entity/service/v1/receiptcancel/',
+  readymix_receipt_entry_cancel: 'entity/service/v1/receiptentrycancel/',
 };

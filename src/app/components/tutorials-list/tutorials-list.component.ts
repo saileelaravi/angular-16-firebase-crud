@@ -35,6 +35,8 @@ export class TutorialsListComponent implements OnInit {
       )
     ).subscribe(data => {
       this.tutorials = data;
+      console.log(data);
+      
     });
   }
 
